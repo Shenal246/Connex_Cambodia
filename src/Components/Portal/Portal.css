@@ -1,0 +1,17 @@
+.portal{
+    /* background-color: rgb(255, 255, 255); */
+    padding: 7%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    font:bold;
+    text-align: center;
+    font-size: 60px;
+}
+
+.one{
+color: rgb(103, 173, 211);
+}
+
+.two{
+color: green;
+}

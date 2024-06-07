@@ -1,0 +1,90 @@
+#app {
+  height: 100%
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  height: 35%;
+}
+
+.swiper-slide div {
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide div img {
+  display: block;
+  width: 100%;
+}
+
+.vendors {
+  padding-top: 50px;
+}
+
+/* Vedor Logos */
+
+.image-container {
+  background-color: rgb(255, 255, 255);
+  width: 25%;
+  text-align: center;
+  border-radius: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/* Vendors Text */
+
+.vendorText {
+  text-align: center;
+  color: #88E7D0;
+  font-weight: bolder;
+  font-size: 150%;
+}
+
+#ourVendorsText {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  #ourVendorsText {
+      font-size: 25px;
+  }
+
+  .hero p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+  }
+
+  .vendorText{
+    font-size: 95%;
+  }
+
+  .swiper {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,29 @@
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the height to cover the entire viewport */
+    background-color: #0a2239; /* Dark blue background color */
+}
+
+.shape {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #53a2db; /* Light blue shape color */
+    transform: rotate(45deg); /* Rotate the shapes by 45 degrees */
+}
+
+.shape1 {
+    top: 50px;
+    left: 50px;
+}
+
+.shape2 {
+    top: 150px;
+    right: 50px;
+}
+
+.shape3 {
+    top: 250px;
+    left: 125px;
+}

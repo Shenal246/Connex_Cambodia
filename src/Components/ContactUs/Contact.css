@@ -1,0 +1,179 @@
+.spacer {
+    width: 10px;
+    /* Adjust this value as needed */
+}
+
+#floatingTextarea2 {
+    height: 200px;
+}
+
+.btnContainer {
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    #Text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #Text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Text {
+        font-size: 21px;
+    }
+
+    .mapSL {
+        /* margin-left: 30% !important; */
+    }
+
+    .countryData {
+        /* margin-left: 25% !important; */
+        text-align: center;
+
+    }
+
+    .line {
+        width: 350px;
+    }
+}
+
+.raw {
+    margin-top: 10px;
+}
+
+#Text {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+.inputField {
+    /* margin-bottom: 10%; */
+    margin-top: 10%;
+}
+
+.h1 {
+    font-size: 60px !important;
+    color: aqua !important;
+}
+
+.h2 {
+    color: white !important;
+    text-align: justify !important;
+}
+
+.tikBox {
+    color: white;
+}
+
+.formcheck {
+    margin-top: 20px;
+}
+
+.countryData {
+    margin-top: 4% !important;
+    color: white;
+}
+
+.countryName {
+    font-size: 50px;
+}
+
+.callIcon3 {
+    margin-top: 3%;
+    margin-right: 23px;
+    color: white;
+}
+
+.img3 {
+    margin-right: 28px;
+    color: white;
+}
+
+.address3 {
+    /* margin-left: 1%; */
+    padding-top: 2px;
+}
+
+.address {
+    margin-left: 40px;
+}
+
+.txt1 {
+    margin-top: 30px;
+    font-style: oblique;
+    font: bold
+}
+
+.txtarea {
+    height: 70px !important;
+}
+
+.line {
+    width: 50%;
+}
+
+.row2 {
+    background-color: rgba(66, 66, 66, 0.41);
+    padding-left: 4%;
+    border-radius: 40px;
+    margin-bottom: 4%;
+    margin-top: 4% !important;
+}
+
+
+/* GetDirectionsButton.css */
+
+.neon-button {
+    background-color: #000;
+    color: #00ffff;
+    /* Neon blue color */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    /* Neon glow effect */
+    width: 200px;
+    margin-left: 3px;
+    margin-top: 13px !important;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    /* Increased glow on hover */
+}
+
+.is-invalid {
+    border: 2px solid red;
+}
+
+.text-danger {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+}
+
+.mapSL{
+    width: 230px;
+    margin-left: 100px;
+}
+.line{
+    display: none;
+}

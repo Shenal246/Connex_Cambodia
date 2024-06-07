@@ -1,0 +1,29 @@
+
+@media only screen and (min-width: 601px) {
+    body {
+        /* Set the background image */
+        background-image: url('bd.jpg');
+        background-size: cover;
+        position: relative;
+       
+        width: 100%;
+        height: 100%;
+       
+        
+      
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        /* Set the background image */
+        background-image: url('bd2.jpg');
+        background-size: cover;
+        position: absolute;
+       
+        width: 100%;
+        height: 100%;
+       
+       
+        
+      
+    }}

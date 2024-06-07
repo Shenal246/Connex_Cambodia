@@ -1,0 +1,161 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* App.css */
+
+.custom-chatbot .rsc-container {
+    width: 350px;
+    /* height: 600px; */
+    border-radius: 10px;
+}
+
+.custom-chatbot .rsc-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-chatbot .rsc-header {
+    background-color: #09447a;
+    color: white;
+}
+
+.custom-chatbot .rsc-footer {
+    background-color: #09447a;
+}
+
+.custom-chatbot .rsc-input {
+    background-color: #09447a;
+    color: white;
+}
+
+/* .custom-chatbot .rsc-ts-bot {
+    background-color: #14404d;
+    color: black;
+  } */
+
+.custom-chatbot .rsc-os-bubble {
+    background-color: #661414;
+    color: white;
+}
+
+.custom-chatbot .rsc-input::placeholder {
+    color: #bbb;
+    /* Customize placeholder text color */
+}
+
+.custom-chatbot .rsc-submit-button {
+    background-color: #61dafb;
+    /* Change send button background color */
+    color: #0e41a7;
+    /* Change send button icon color */
+    border: none;
+    /* Remove default border */
+    transition: background-color 0.3s ease;
+    width: 15%;
+    height: 100%;
+}
+
+.custom-chatbot .rsc-submit-button:hover {
+    background-color: #2575a7;
+    /* Change send button background color on hover */
+}
+
+.custom-chatbot .rsc-float-button:hover {
+    transform: scale(1.2);
+    /* Slightly increase size on hover */
+}
+
+/* Floating button image */
+.rsc-float-button {
+    background-image: var(--floating-button-image) !important;
+    background-size: 50% 50% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center 1 !important;
+    border: none;
+    background-color: #61dafb !important;
+    transition: 0.3s ease, transform 0.3s ease;
+    z-index: 9 !important;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8) !important;
+}
+
+.rsc-float-button::before,
+.rsc-float-button::after {
+    content: none;
+    /* Ensure no pseudo-elements are adding the old icon */
+}
+
+/* In case the icon is an actual element inside the button, hide it */
+.rsc-float-button svg {
+    display: none;
+    /* Hide the existing SVG icon if present */
+}
+
+.rsc-float-button {
+    width: 60px;
+    /* Set the desired width */
+    height: 60px;
+    /* Set the desired height */
+}
+
+.online-dot {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 10 !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 640px) {
+    .online-dot {
+        bottom: 10%;
+        right: 6.5%;
+    }
+
+    .custom-chatbot .rsc-container {
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+    }
+}

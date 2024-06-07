@@ -1,0 +1,248 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+#whoweareText {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+
+@media (max-width: 425px) {
+    #whoweareText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #whoweareText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #whoweareText {
+        font-size: 21px;
+    }
+}
+
+hr {
+    height: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+
+#whText {
+    color: #499FEE;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.conwh {
+    background-color: rgba(185, 181, 181, 0);
+    border-radius: 10px;
+}
+
+.welogos {
+    margin: 10px;
+    background-color: rgb(130, 163, 163);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.welogos:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.techcontainer {
+    padding-bottom: 5%;
+}
+
+.techimage {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 70% !important;
+    margin-left: 14%;
+}
+
+.techText {
+    font-size: large;
+    color: rgb(4, 29, 61);
+    font-weight: bold;
+}
+
+.textarea {
+    margin-top: 10px;
+}
+
+/* Model */
+.disModel {
+    background-color: rgba(108, 204, 204, 0.2);
+}
+
+.model-header {
+    background-color: #01066B;
+    color: white;
+}
+
+.model-body {
+    background-color: #C9CBF9;
+}
+
+.model-content-text {
+    font-weight: bolder;
+}
+
+.model-image {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    height: auto;
+}
+
+.contactUs-button {
+    background-color: #01066B !important;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+.contactUs-button:hover {
+    background-color: #0810af !important;
+}
+
+.model-footer {
+    background-color: #C9CBF9 !important;
+}
+
+
+@media (max-width: 640px) {
+    .welogos {
+        margin: 10px;
+        background-color: rgb(130, 163, 163);
+        width: 35% !important;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .techcontainer {
+        text-align: justify !important;
+        padding-bottom: 5%;
+    }
+
+    #whText {
+        color: #499FEE;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .conwh {
+        text-align: center;
+    }
+
+    .iconMob {
+        width: 50px;
+    }
+
+    .iconText {
+        font-size: 16px !important;
+        color: white;
+        padding-top: 10px;
+    }
+
+    .iconCol {
+        margin: 2px !important;
+    }
+
+    .icon-container {
+        background-color: rgba(172, 189, 189, 0.3);
+        padding: 5%;
+        border-radius: 15%;
+        height: 80px;
+        align-items: center !important;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .icon {
+        width: 52px;
+    }
+
+}
+
+@media (max-width: 1390px) {
+    .tx1 {
+        /* margin-bottom: 40px !important; */
+        font-size: 32px !important;
+        color: white;
+        font-weight: 400 !important;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .tx2p{
+        font-size: 20px !important;
+        margin-bottom: 0px;
+    }
+
+}
+
+.icon {
+    width: 55px;
+}
+
+
+
+.icon-container {
+    background-color: rgba(172, 189, 189, 0.3);
+    padding: 10%;
+    border-radius: 15%;
+    text-align: center;
+}
+
+.iconCol {
+    margin: 10px;
+}
+
+.iconText {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
+.textRow {
+    text-align: center;
+}
+
+.iconRow {
+    text-align: center;
+}
+
+.techRow {
+    text-align: center;
+}
+
+.whotextRow {
+    margin-bottom: 5%;
+}
+
+.tx1 {
+    /* margin-bottom: 40px !important; */
+    font-size: 38px;
+    color: white;
+    font-weight: 400 !important;
+    margin-bottom: 0;
+    margin-top: 0;
+}

@@ -1,0 +1,36 @@
+.blogimg{
+    padding: 4px;
+    border-radius: 20px; 
+
+}
+
+.cards2{
+    background-color: rgba(201, 209, 216, 0.384) !important;
+    color: white !important;
+}
+
+.card-title{
+color: rgb(34, 205, 205) !important;
+}
+
+.modal{
+    padding-top: 100px;
+}
+
+@media(max-width: 675px){
+    .cards{
+        margin: 10px; /* Add margin to cards for better spacing */
+    }
+}
+
+.read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 140px;
+    border: 120px;
+}
+
+.headingrow{
+    padding-bottom: 14px;
+}

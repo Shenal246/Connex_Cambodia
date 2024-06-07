@@ -1,0 +1,102 @@
+#whoweareText {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+
+@media (max-width: 425px) {
+    #whoweareText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #whoweareText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #whoweareText {
+        font-size: 21px;
+    }
+}
+
+.latest {
+    padding: 5%;
+}
+
+.cardContainer1 {
+    width: 100%;
+    border-radius: 10%;
+    background-color: #01066B !important;
+
+}
+
+.cardContainer2 {
+
+    border-radius: 5%;
+    background-color: #01066B !important;
+    margin-bottom: 2px;
+}
+
+.image1 {
+    height: 330px;
+}
+
+.image2 {
+    height: 150px;
+}
+
+.cardBody {
+    background-color: #01066B;
+    border-radius: 5%;
+    color: white !important;
+    height: 50% !important;
+}
+
+.cardBody2 {
+    background-color: #01066B;
+    border-radius: 5%;
+    color: white !important;
+    height: 10% !important;
+    padding: 1.25% !important;
+}
+
+.headingRow {
+    margin-bottom: 2%;
+}
+
+.navigation {
+    /* background-color: #01066B; */
+    margin-left: 2%;
+    margin-bottom: 1%;
+    border-radius: 15px;
+    height: 96%;
+    text-align: center;
+}
+
+.backgrnd {
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 2%;
+    padding-bottom: 1% !important;
+    border-radius: 41px;
+}
+
+.iconsss {
+    /* background-color: aliceblue  !important; */
+    color: white !important;
+    height: 100%;
+    width: 80px;
+    background-color: #01066B;
+}
+
+.iconsss:hover {
+    background-color: #02098e !important;
+    transition: 1s;
+}
+
+.AltText{
+    color: aliceblue;
+}

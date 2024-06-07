@@ -1,0 +1,145 @@
+.cards {
+    padding-top: 2%;
+
+}
+
+/* Add this style to your Events.css file */
+.red-background {
+    background-color: red;
+}
+
+.crd {
+
+    margin-top: 7px;
+}
+
+.card1 {
+    background-color: #01066B;
+    padding: 2px;
+    width: 400px;
+}
+
+.textclr {
+    color: white;
+}
+
+.small-title {
+    font-size: 16px;
+    /* Adjust font size as needed */
+    line-height: 1.2;
+    /* Adjust line height as needed */
+}
+
+.card-img-top {
+    border-radius: 5px;
+    /* Optional: Added border radius to the image */
+}
+
+.playicon {
+    font-size: xx-large;
+    padding: 15px;
+    color: #01066B !important;
+
+
+}
+
+.playicon:hover {
+    font-size: xx-large;
+    padding: 15px;
+    color: #ffffff !important;
+}
+
+.centered {
+    background-color: white;
+    /* padding: 15px; */
+    border-radius: 15px;
+    align-items: center;
+}
+
+.centered:hover {
+    background-color: #01066B;
+    /* padding: 15px; */
+    border-radius: 15px;
+    align-items: center;
+}
+
+.fa-play.bttn {
+    font-size: 2.3rem;
+}
+
+/* Events.css */
+
+.crd {
+    overflow: hidden;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.fa-play {
+    color: white;
+    text-decoration: none;
+}
+
+#EventsText {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+
+.text {
+    padding-top: 2%;
+}
+
+.modalClr {
+    background-color: #2b2d6366 !important;
+}
+
+.close {
+    background-color: #ffffff !important;
+}
+
+@media (max-width: 425px) {
+    #EventsText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #EventsText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #EventsText {
+        font-size: 21px;
+    }
+
+    .subTopin {
+        font-size: 10px;
+    }
+
+    .card1{
+        width: 355px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .card1 {
+        background-color: #01066B;
+        padding: 2px;
+        width: 350px;
+    }
+}
+
+.subTopin {
+    font-size: 30px;
+    color: rgb(158, 165, 226);
+}

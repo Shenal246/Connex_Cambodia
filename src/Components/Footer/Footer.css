@@ -1,0 +1,158 @@
+/* If using CSS */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.Footer {
+    
+    padding: 2rem 0;
+    color: rgb(255, 255, 255);
+    background-image: url('../../images/footer.png');
+    background-color: #021e3aeb;
+    background-size: cover;
+
+   
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ft-1{
+    text-align: center !important;
+  }
+
+  .ft-2{
+    text-align: center;
+  }
+
+  
+  .ft-1 h3 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0.5rem 0;
+  }
+  .img{
+  
+    margin-right: 3%;
+    color: white;
+  }
+
+  .img2{
+    margin-right: 3%;
+    color: white;
+  }
+  
+  .ft-1 p {
+    font-weight: 500;
+  }
+
+  .footer-icons img{
+    text-align: center;
+  }
+
+  .footer-icons i {
+    padding: 0.4rem 0.5rem;
+    background: #efefef;
+    /* color: #278417; */
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    font-size: large;
+  }
+  
+  .footer-icons i:hover {
+    background: #11830d;
+    color: #fff;
+    transition: 0.6s;
+    cursor: pointer;
+    
+  }
+
+  .facebook{
+    color: #4267B2;
+  }
+  
+  .twitter{
+    color: #14171A;
+  }
+
+  .instagram{
+    color:#E4405F ;
+  }
+
+  .linkedIn{
+    color: #0A66C2;
+  }
+
+  .youtube{
+    color: rgba(255, 0, 0, 0.664);
+  }
+
+  .Footer h5 {
+    color: #f60838;
+  }
+
+  .address2{
+    /* margin-left: 1%; */
+    padding-top: 2px;
+  }
+
+  .iconrow{
+    padding: 4px;
+  }
+
+  
+  .resources{
+    padding-top: 5px; 
+    text-align: center;  
+  }
+  
+  .ft-2 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .ft-2 ul li {
+    font-weight: 500;
+  }
+  
+  .ft-2 ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.06rem;
+  }
+
+  .ownerRights{
+    color: #7aa4b1;
+    padding-top: 2px;
+
+  }
+
+  .callIcon1{
+    margin-top: 2%;
+    margin-right: 2%;
+    color: white;
+    
+  }
+
+  .callIcon2{
+    margin-top: 1%;
+    margin-right: 3%; 
+    color: white;
+  }
+
+  .ft-2 h3 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0.5rem 0;
+  }
+  
+  /* CSS to increase line gaps only for .ft-1 */
+.ft-1  {
+    line-height: 1.9; /* Adjust this value as needed */
+}
+
+.txt{
+    color: rgb(255, 255, 255);
+}
+
+.rowlast{
+  padding-top: 3px;
+}

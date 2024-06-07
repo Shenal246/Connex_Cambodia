@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: rgba(16, 110, 234, 0.2);
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+
+#topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+  transition: 0.3s;
+}
+
+#topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#topbar .social-links a:hover {
+  background-color: rgb(35, 116, 27);
+}
+
+@media (max-width: 599px) {
+  .nmb {
+    font-size: 10px;
+  }
+
+
+  .eml {
+    font-size: 12px
+  }
+
+
+}
