@@ -3,7 +3,8 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 import './Contact.css';
-import mapSL from '../../images/map/mapSL.png';
+import cambo from '../../images/map/cambo.png';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -30,19 +31,26 @@ const Contact = () => {
         setIsHuman(!!value);
     };
 
+    const { t } = useTranslation();
+    const { cont1, cont2, cont3, cont4, cont5, cont6, cont7,
+        cont8, cont9, cont10, cont11, cont12, cont13, cont14, cont15, cont16,
+        cont17, cont18, cont19, cont20, cont21, cont22, cont23, cont24, cont25,
+        cont26, cont27, cont28, cont29, cont30
+    } = t('contsec', { returnObjects: true });
+
     return (
         <div className="container">
             <div className='row'>
                 <div className="row gy-3 text mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
                     <div className="col-md-4"><hr /></div>
-                    <div className="col-md-4"><p id='Text'>Contact Us</p></div>
+                    <div className="col-md-4"><p id='Text'>{cont1}</p></div>
                     <div className="col-md-4"><hr /></div>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md inputField" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
-                    <h1 className='h1'>Reach out to us <br /> to let us know how we can assist you.</h1>
-                    <h2 className='h2'>We are happy to provide <br /> customer support or <br />answer any general inquiries <br /> you may have.</h2>
+                    <h1 className='h1'>{cont2}<br /> {cont3}</h1>
+                    <h2 className='h2'>{cont4}<br /> {cont5} <br />{cont6} <br /> {cont7}</h2>
                 </div>
                 <div className="col-md inputField" data-aos="fade-down" dat a-aos-duration="1000" data-aos-delay="50">
                     <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
@@ -52,21 +60,21 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         className={`form-control ${errors.firstName ? 'is-invalid' : ''}`}
-                                        placeholder="First name"
-                                        aria-label="First name"
+                                        placeholder={cont8}
+                                        aria-label={cont8}
                                         {...register('firstName', { required: true })}
                                     />
-                                    {errors.firstName && <span className="text-danger">First name is required</span>}
+                                    {errors.firstName && <span className="text-danger">{cont9}</span>}
                                 </div>
                                 <div className="col-md">
                                     <input
                                         type="text"
                                         className={`form-control ${errors.lastName ? 'is-invalid' : ''}`}
-                                        placeholder="Last name"
-                                        aria-label="Last name"
+                                        placeholder={cont10}
+                                        aria-label={cont10}
                                         {...register('lastName', { required: true })}
                                     />
-                                    {errors.lastName && <span className="text-danger">Last name is required</span>}
+                                    {errors.lastName && <span className="text-danger">{cont11}</span>}
                                 </div>
                             </div>
                             <div className="row mb-2">
@@ -74,26 +82,26 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         className={`form-control ${errors.Company ? 'is-invalid' : ''}`}
-                                        placeholder="Company"
-                                        aria-label="Company"
+                                        placeholder={cont12}
+                                        aria-label={cont12}
                                         {...register('Company', { required: true })}
                                     />
-                                    {errors.Company && <span className="text-danger">Company is required</span>}
+                                    {errors.Company && <span className="text-danger">{cont13}</span>}
                                 </div>
                                 <div className="col-md">
                                     <input
                                         type="text"
                                         className={`form-control ${errors.contactNumber ? 'is-invalid' : ''}`}
-                                        placeholder="Contact Number"
-                                        aria-label="Contact Number"
+                                        placeholder={cont14}
+                                        aria-label={cont14}
                                         {...register('contactNumber', {
                                             required: true,
                                             pattern: {
                                                 value: /^[0-9]+$/,
-                                                message: 'Invalid contact number',
+                                                message: { cont15 },
                                             },
                                             validate: {
-                                                length: (value) => value.length === 10 || 'Contact number must be exactly 10 digits',
+                                                length: (value) => value.length === 10 || { cont15 },
                                             },
                                         })}
                                     />
@@ -107,12 +115,12 @@ const Contact = () => {
                                 type="email"
                                 className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                                 id="floatingInput"
-                                placeholder="name@example.com"
+                                placeholder={cont16}
                                 {...register('email', {
                                     required: true,
                                     pattern: {
                                         value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                                        message: 'Invalid email address',
+                                        message: { cont17 },
                                     },
                                 })}
                             />
@@ -122,11 +130,11 @@ const Contact = () => {
                         <div className="col-md">
                             <textarea
                                 className={`form-control txtarea ${errors.comments ? 'is-invalid' : ''}`}
-                                placeholder="Leave a comment here"
+                                placeholder={cont30}
                                 id="floatingTextarea2"
                                 {...register('comments', { required: true })}
                             ></textarea>
-                            {errors.comments && <span className="text-danger">Comments are required</span>}
+                            {errors.comments && <span className="text-danger"> {cont18}</span>}
                         </div>
 
                         <div className="form-check formcheck">
@@ -137,9 +145,9 @@ const Contact = () => {
                                 {...register('acceptTerms', { required: true })}
                             />
                             <label className="form-check-label tikBox" htmlFor="flexCheckDefault">
-                                I accept the privacy & policy
+                                {cont19}
                             </label>
-                            {errors.acceptTerms && <span className="text-danger">You must accept the privacy & policy</span>}
+                            {errors.acceptTerms && <span className="text-danger"> {cont20}</span>}
                         </div>
 
                         <div className="mt-3">
@@ -151,10 +159,10 @@ const Contact = () => {
                         </div>
                         <div className="row mt-4 btnContainer">
                             <div className="col-md-6 mb-2">
-                                <button type="submit" className="btn btn-success">Submit</button>
+                                <button type="submit" className="btn btn-success">{cont21}</button>
                             </div>
                             <div className="col-md-6">
-                                <button type="reset" className="btn btn-danger" onClick={() => reset()}>Clear</button>
+                                <button type="reset" className="btn btn-danger" onClick={() => reset()}>{cont22}</button>
                             </div>
                         </div>
                     </form>
@@ -163,24 +171,24 @@ const Contact = () => {
 
             <div className="row">
                 <div className="col-md-6 countryData">
-                    <h1 className='countryName address3'>Sri Lanka</h1>
-                    <h3>Sri Lankan Office</h3>
+                    <h1 className='countryName address3'>{cont23}</h1>
+                    <h3>{cont24}</h3>
                     <p className='txt1'><i className="fas fa-map-marker-alt img3"></i>
-                        No 286,<br />
-                        <span className='address'>R. A. De Mel Mawatha,</span><br />
-                        <span className='address'>Colombo 00300,</span><br />
-                        <span className='address'>Sri Lanka</span>
+                        {cont25}<br />
+                        <span className='address'>{cont26}</span><br />
+                        <span className='address'>{cont27}</span><br />
+                        <span className='address'>{cont28}</span>
                     </p>
-                    <button 
-                        className="neon-button" 
-                        onClick={() => window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8378227416442!2d79.84946567448274!3d6.909986818552493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25965c4fa5a01%3A0x2773f36f89729e4e!2sConnex%20Information%20Technologies%20(Pvt)%20Ltd.!5e0!3m2!1sen!2slk!4v1715597396485!5m2!1sen!2slk')}
+                    <button
+                        className="neon-button"
+                        onClick={() => window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15636.537063489868!2d104.91642621180816!3d11.54222489236825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310956d2a2d70f1d%3A0xea84a6a9241db2f6!2sMorgan%20Tower!5e0!3m2!1sen!2slk!4v1718103352142!5m2!1sen!2slk')}
                     >
-                        Get Directions
+                        {cont29}
                     </button>
                     <hr className='line'></hr><hr className='line'></hr>
                 </div>
                 <div className="col-md-6">
-                <img src={mapSL } className='mapSL' />
+                    <img src={cambo} className='cambo' />
 
                 </div>
             </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './UpcomingNews.css';
 import axios from "axios";
 import connections from '../../../config';
+import { useTranslation } from 'react-i18next';
 
 const UpcomingNews = () => {
     const videoRef = useRef(null); // Create a ref for the video element
@@ -36,12 +37,18 @@ const UpcomingNews = () => {
 
     }, []);
 
+    
+    const { t } = useTranslation();
+    const { upevnt1, upevnt2, upevnt3, upevnt4, upevnt5
+        
+        } = t('upEventSec', { returnObjects: true });
+
     return (
-        <div className="container">
+        <div className="upevntainer">
             <div className='row'>
                 <div className="row text">
                     <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
-                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='UpcomingNewsText'>Upcoming <br /> Events & News</p></div>
+                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='UpcomingNewsText'>{upevnt1} <br /> {upevnt2}</p></div>
                     <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
                 </div>
             </div>
@@ -61,7 +68,7 @@ const UpcomingNews = () => {
                                         />
                                     </>
                                 ) : (
-                                    <p>No Image Available</p>
+                                    <p>{upevnt3}</p>
                                 )}
                                 <div className="centered">
                                     <Link to="#" className="fa-solid fa-play playicon"></Link>
@@ -80,9 +87,9 @@ const UpcomingNews = () => {
             {/* Modal */}
             <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" onClick={handleCloseModal}>
                 <div className="modal-dialog modal-dialog-centered modal-xl">
-                    <div className="modal-content modalClr">
+                    <div className="modal-upevntent modalClr">
                         <div className="modal-header">
-                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label={upevnt4}></button>
                         </div>
                         <div className="modal-body">
                             {currentVideoLink && (

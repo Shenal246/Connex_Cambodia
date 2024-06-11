@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import './Blog.css'; // Import your CSS file
 import { Modal, Button } from 'react-bootstrap'; // Import other Bootstrap components
 import blog from '../../images/Blogs/blogging-services.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
     const [lgShow, setLgShow] = useState(false);
-
+    const { t } = useTranslation();
+    const { blg1
+        } = t('blogsec', { returnObjects: true });
 
 
     return (
@@ -14,7 +17,7 @@ const Blog = () => {
                 <div className='row '>
                     <div className="row text headingrow">
                         <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
-                        <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='topic'>Blogs</p></div>
+                        <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='topic'>{blg1}</p></div>
                         <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
                     </div>
                 </div>

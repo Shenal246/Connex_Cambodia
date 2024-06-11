@@ -170,9 +170,11 @@
     margin-top: 0.25em;
 }
 
-.mapSL{
+.cambo{
     width: 230px;
     margin-left: 100px;
+    height: 450px;
+    margin-top: 30px !important;
 }
 .line{
     display: none;

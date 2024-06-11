@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Events.css';
 import axios from "axios";
 import connections from '../../config';
+import { useTranslation } from 'react-i18next';
 
 const Events = () => {
     const videoRef = useRef(null);
@@ -51,19 +52,24 @@ const Events = () => {
 
     }, []);
 
+    const { t } = useTranslation();
+    const { evnt1, evnt2, evnt3, evnt4, evnt5
+        } = t('eventsec', { returnObjects: true });
+
+
     return (
-        <div className="container">
+        <div className="evntainer">
             <div className='row'>
                 <div className="row text">
                     <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
-                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='EventsText'>Events & News</p></div>
+                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='EventsText'>{evnt1}</p></div>
                     <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
                 </div>
             </div>
 
             {/* Latest News */}
             <div className='row'>
-                <div className='subTopin'>Latest Events & News</div>
+                <div className='subTopin'>{evnt2}</div>
             </div>
 
             <div className="row cards">
@@ -81,7 +87,7 @@ const Events = () => {
                                         />
                                     </>
                                 ) : (
-                                    <p>No Image Available</p>
+                                    <p>{evnt3}</p>
                                 )}
 
                                 <div className="centered">
@@ -101,9 +107,9 @@ const Events = () => {
             {/* Modal */}
             <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" onClick={handleCloseModal}>
                 <div className="modal-dialog modal-dialog-centered modal-xl">
-                    <div className="modal-content modalClr">
+                    <div className="modal-evntent modalClr">
                         <div className="modal-header">
-                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label={evnt4}></button>
                         </div>
                         <div className="modal-body">
                             {currentVideoLink && (
@@ -125,7 +131,7 @@ const Events = () => {
 
             {/* Other News */}
             <div className='row'>
-                <div className='subTopin'>Events & News</div>
+                <div className='subTopin'>{evnt5}</div>
             </div>
 
             <div className="row cards">
@@ -143,7 +149,7 @@ const Events = () => {
                                         />
                                     </>
                                 ) : (
-                                    <p>No Image Available</p>
+                                    <p>{evnt3}</p>
                                 )}
                                 <div className="centered">
                                     <Link to="#" className="fa-solid fa-play playicon"></Link>
@@ -162,9 +168,9 @@ const Events = () => {
             {/* Modal */}
             <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" onClick={handleCloseModal}>
                 <div className="modal-dialog modal-dialog-centered modal-xl">
-                    <div className="modal-content modalClr">
+                    <div className="modal-evntent modalClr">
                         <div className="modal-header">
-                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label={evnt4}></button>
                         </div>
                         <div className="modal-body">
                             {currentVideoLink && (
