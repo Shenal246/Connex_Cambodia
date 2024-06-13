@@ -26,7 +26,7 @@ const Events = () => {
 
     useEffect(() => {
         const values = {
-            query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=2 AND status=1 AND cnt=2;",
+            query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=2 AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 
@@ -40,7 +40,7 @@ const Events = () => {
 
         // For other news
         const values1 = {
-            query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=7 AND status=1 AND cnt=1;",
+            query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=7 AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 
@@ -58,7 +58,7 @@ const Events = () => {
 
 
     return (
-        <div className="evntainer">
+        <div className="container">
             <div className='row'>
                 <div className="row text">
                     <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
