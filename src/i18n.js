@@ -176,6 +176,32 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 },
                 blogsec: {
                     blg1: "Blogs"
+                },
+                authentisec:{
+                    at1: "Authentication & Identity Management",
+                    at2: "No Image Available",                  
+                },
+                cybersec:{
+                    cy1: "Cyber Security Governance & Compliance",
+                    cy2: "No Image Available"
+                },endpsec:{
+                    ep1: "Endpoint Security",
+                    ep2: "No Image Available"
+                },newtworksec: {
+                    nt1: "Networking",
+                    nt2: "No Image Available"
+                },ifmsec: {
+                    if1: "Data Center Infrastructure and Infrastructure Monitoring",
+                    if2: "No Image Available"
+                },perisec: {
+                    pr1:"Perimeter And Internal Security",
+                    pr2:"No Image Available"
+                },securitysec: {
+                    scrty1: "Security Management",
+                    scrty2: "No Image Available"
+                },serversec: {
+                    svr1: "Server Storage & Backup Solutions",
+                    svr2: "No Image Available"
                 }
             },
         },
@@ -342,8 +368,39 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 },
                 blogsec: {
                     blg1: "ប្លុក"
-                }
-                
+                }, 
+                    authentisec: {
+                        "at1": "ការផ្ទៀងផ្ទាត់ និងការគ្រប់គ្រងអត្តសញ្ញាណ",
+                        "at2": "គ្មានរូបភាព"
+                    },
+                    cybersec: {
+                        "cy1": "ការគ្រប់គ្រង និងភាពទៀងទាត់នៃសន្តិសុខអ៊ីនធឺណិត",
+                        "cy2": "គ្មានរូបភាព"
+                    },
+                    endpsec: {
+                        "ep1": "សន្តិសុខឧបករណ៍បញ្ចប់",
+                        "ep2": "គ្មានរូបភាព"
+                    },
+                    newtworksec: {
+                        "nt1": "បណ្តាញ",
+                        "nt2": "គ្មានរូបភាព"
+                    },
+                    ifmsec: {
+                        "if1": "អគ្គិសនីនៃមជ្ឈមណ្ឌលទិន្នន័យ និងការត្រួតពិនិត្យទ្រព្យសម្បត្តិ",
+                        "if2": "គ្មានរូបភាព"
+                    },
+                    perisec: {
+                        "pr1": "សន្តិសុខព្រំដែន និងសន្តិសុខផ្ទៃក្នុង",
+                        "pr2": "គ្មានរូបភាព"
+                    },
+                    securitysec: {
+                        "scrty1": "ការគ្រប់គ្រងសន្តិសុខ",
+                        "scrty2": "គ្មានរូបភាព"
+                    },
+                    serversec: {
+                        "svr1": "ដំណោះស្រាយស្តុកនិងបម្រុងទុកម៉ាស៊ីនមេ",
+                        "svr2": "គ្មានរូបភាព"
+                    }   
             },
         }
     }

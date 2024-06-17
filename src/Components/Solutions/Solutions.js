@@ -27,7 +27,7 @@ function Solutions() {
         </div>
         <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 rowmargin">
           <div className="col">
-            <NavLink to="/Solutions/InternetSecurity" activeClassName='active-link'>
+            <NavLink to="/Solutions/Perimia" activeClassName='active-link'>
               <div className="card crd">
                 <img src={Perimie} className="card-img-top " alt="Perimeter and Internal Security" />
                 <div className="card-body cardSize">

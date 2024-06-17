@@ -6,13 +6,15 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { Row } from 'react-bootstrap';
 import connections from '../../../../config';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 function InfrastructureMonitoring() {
     const [vendors, setVendors] = useState([]);
     const [show, setShow] = useState(false);
     const [currentVendor, setCurrentVendor] = useState(null);
-
+    const navigate = useNavigate();
     const serverlink = connections.serverLink;
 
     useEffect(() => {
@@ -32,8 +34,12 @@ function InfrastructureMonitoring() {
     }, []);
 
     const handleCardClick = (vend) => {
-        setCurrentVendor(vend);
+        navigate(`/Solutions/InfrastructureMonitoring/${vend.name}`, { state: { vend } });
     };
+
+    const { t } = useTranslation();
+    const { if1, if2
+        } = t('ifmsec', { returnObjects: true });
 
     return (
         <section>
@@ -41,7 +47,7 @@ function InfrastructureMonitoring() {
                 <div className='row '>
                     <div className="row text headingrow">
                         <div className="col-3" data-aos="fade-up" data-aos-delay="100"><hr /></div>
-                        <div className="col-6" data-aos="fade-up" data-aos-delay="100"><p id='topic'>Data Center Infrastructure and Infrastructure Monitoring</p></div>
+                        <div className="col-6" data-aos="fade-up" data-aos-delay="100"><p id='topic'>{if1}</p></div>
                         <div className="col-3" data-aos="fade-up" data-aos-delay="100"><hr /></div>
                     </div>
                 </div>
@@ -50,7 +56,7 @@ function InfrastructureMonitoring() {
                     {vendors && vendors.map((vend, index) => (
                         <div className="col" key={index}>
 
-                            <div class="card h-100" onClick={() => { setShow(true); handleCardClick(vend); }}>
+                            <div class="card h-100" onClick={() => {  handleCardClick(vend); }}>
                                 {vend.image_data ? (
                                     <>
                                         <img
@@ -61,7 +67,7 @@ function InfrastructureMonitoring() {
                                         />
                                     </>
                                 ) : (
-                                    <p>No Image Available</p>
+                                    <p>{if2}</p>
                                 )}
                                 <div class="card-body">
                                     <h5 class="card-title vendorTitel">{vend.name}</h5>

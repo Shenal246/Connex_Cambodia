@@ -7,12 +7,14 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { Row } from 'react-bootstrap';
 import connections from '../../../../config';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Server() {
     const [vendors, setVendors] = useState([]);
     const [show, setShow] = useState(false);
     const [currentVendor, setCurrentVendor] = useState(null);
-
+    const navigate = useNavigate();
     const serverlink = connections.serverLink;
 
     useEffect(() => {
@@ -32,8 +34,12 @@ function Server() {
     }, []);
 
     const handleCardClick = (vend) => {
-        setCurrentVendor(vend);
+        navigate(`/Solutions/ServerBackup/${vend.name}`, { state: { vend } });
     };
+
+    const { t } = useTranslation();
+    const { svr1, svr2
+        } = t('serversec', { returnObjects: true });
 
     return (
         <section>
@@ -41,7 +47,7 @@ function Server() {
                 <div className='row '>
                     <div className="row text headingrow">
                         <div className="col-3" data-aos="fade-up" data-aos-delay="100"><hr /></div>
-                        <div className="col-6" data-aos="fade-up" data-aos-delay="100"><p id='topic'>Server Storage & Backup Solutions</p></div>
+                        <div className="col-6" data-aos="fade-up" data-aos-delay="100"><p id='topic'>{svr1}</p></div>
                         <div className="col-3" data-aos="fade-up" data-aos-delay="100"><hr /></div>
                     </div>
                 </div>
@@ -50,7 +56,7 @@ function Server() {
                     {vendors && vendors.map((vend, index) => (
                         <div className="col" key={index}>
 
-                            <div class="card h-100" onClick={() => { setShow(true); handleCardClick(vend); }}>
+                            <div class="card h-100" onClick={() => {  handleCardClick(vend); }}>
                                 {vend.image_data ? (
                                     <>
                                         <img
@@ -61,7 +67,7 @@ function Server() {
                                         />
                                     </>
                                 ) : (
-                                    <p>No Image Available</p>
+                                    <p>{svr1}</p>
                                 )}
                                 <div class="card-body">
                                     <h5 class="card-title vendorTitel">{vend.name}</h5>

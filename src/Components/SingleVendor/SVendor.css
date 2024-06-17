@@ -1,0 +1,85 @@
+.vendorNameSingle{
+    /* margin-top: 50px !important; */
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: white;
+    
+}
+.vendorpic1{
+    width: 100%;
+    padding: 10px;
+}
+.websiteButton {
+    width: 10% !important;
+    text-align: center;
+    border-radius: 5px;  
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* Media query for mobile views */
+@media (max-width: 768px) {
+    .websiteButton {
+        width: 45% !important; /* Increase the width for mobile view */
+    }
+
+    .imgbgrd{
+        width: 150px !important;
+    }
+
+    .vendorpic1{
+        width: 100%;
+    }
+    
+}
+
+.imgbgrd{
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px !important;
+}
+
+.bton{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.imgcolmn{
+    background-color: rgba(235, 255, 255, 0.789);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contentVendor{
+    display: block;
+    text-align: justify;
+    background-color: rgba(224, 237, 248, 0.105);
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 50px !important;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.sectionVendor{
+    background-color: rgba(188, 255, 233, 0.104);
+    /* padding: 10px; */
+    margin: 50px;
+    border-radius: 10px;
+    border: 2px solid  rgb(27, 81, 119) ;
+ 
+}
+
+.contentVendor1{
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    text-align: justify;
+    padding-bottom: 50px;
+    color: aliceblue;
+    padding-top: 40px;
+    font-size: 20px;
+}
