@@ -17,12 +17,15 @@ function Chat() {
     const tpno = values[2];
 
     const value3 = {
-      query: "INSERT INTO chat(name, problem, tpno) VALUES (?,?,?)",
+      query: "INSERT INTO chat(name, problem, tpno,countryid,statusid) VALUES (?,?,?,?,?)",
       value1: name,
       value2: problem,
       value3: tpno,
+      value4: 3,
+      value5: 1,
       key: "FKoaDwCi7C"
     };
+
 
     await axios.post("http://192.168.13.75:3001/insert", value3)
       .then((response) => {

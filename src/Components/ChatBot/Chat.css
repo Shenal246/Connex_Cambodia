@@ -38,17 +38,18 @@
     }
 }
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 /* App.css */
 
 .custom-chatbot .rsc-container {
     width: 350px;
-    /* height: 600px; */
+    height: 413px;
     border-radius: 10px;
 }
 
 .custom-chatbot .rsc-content {
     font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
 }
 
 .custom-chatbot .rsc-header {
@@ -155,7 +156,7 @@
 
     .custom-chatbot .rsc-container {
         width: 300px;
-        height: 500px;
+        height: 415px;
         border-radius: 10px;
     }
 }

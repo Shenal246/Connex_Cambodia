@@ -44,36 +44,105 @@
   opacity: 0.9;
 }
 
+/* Styles for devices with a max-width of 425px */
 @media (max-width: 425px) {
   #topic {
     font-size: 15px;
   }
+
 }
 
+/* Styles for devices with a max-width of 375px */
 @media (max-width: 375px) {
   #topic {
     font-size: 15px;
   }
+ 
 }
 
-@media (max-width: 768px) {
-  #topic {
-    font-size: 21px;
-  } 
-}
+/* Styles for devices with a max-width of 650px */
+@media (max-width: 650px) {
 
-@media(max-width: 650px){
-  .datacenter{
-    height: 125px;
-  }
-
-  .crd{
+  .crd {
     padding-bottom: 5%;
   }
 }
+
+
+/* Styles for devices with a max-width of 1024px */
+@media (max-width: 1024px) {
+  .crd {
+    padding-bottom: 6%;
+  }
+
+  .datacenter {
+    height: 147px;
+  }
+}
+
+/* Styles for devices with a min-width of 1440px */
+@media (min-width: 1440px) {
+  .datacenter {
+    height: 206px;
+  }
+}
+
+
+/* Styles for devices with a width between 1024px and 1440px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .crd {
+    padding-bottom: 6%;
+  }
+
+  .datacenter {
+    height: 147px;
+  }
+}
+
 
 .txts{
   font-size: 20px;
   font: bold;
   font-weight: 600;
+}
+
+
+@media (max-width: 767px) {
+  #topic {
+    font-size: 21px;
+  }
+
+  .datacenter {
+    height: 230px !important  ;
+  }
+
+}
+
+@media (max-width: 767px) {
+  #topic {
+    font-size: 21px;
+  }
+  
+  .crd {
+    padding-bottom: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #topic {
+    font-size: 21px;
+  }
+  .crd {
+    padding-bottom: 5%;
+  }
+  .datacenter {
+    height: 230px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  
+  .datacenter {
+    height: 130px !important;
+  }
 }
