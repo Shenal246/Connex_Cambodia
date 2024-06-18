@@ -21,7 +21,13 @@
     #whoweareText {
         font-size: 21px;
     }
+
+    .iframenews{
+        height: 260px !important;
+    }
 }
+
+
 
 .latest {
     padding: 5%;
@@ -100,3 +106,4 @@
 .AltText{
     color: aliceblue;
 }
+

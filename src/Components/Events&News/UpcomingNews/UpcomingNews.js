@@ -25,7 +25,7 @@ const UpcomingNews = () => {
 
     useEffect(() => {
         const values = {
-            query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=1 AND status=1 AND cnt=2;",
+            query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=1 AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 

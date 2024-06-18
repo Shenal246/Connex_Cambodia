@@ -36,8 +36,6 @@ const Events = () => {
             console.log(err);
         });
 
-        // console.log(newsData.image_data);
-
         // For other news
         const values1 = {
             query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=7 AND status=1 AND cnt=3;",
@@ -53,9 +51,7 @@ const Events = () => {
     }, []);
 
     const { t } = useTranslation();
-    const { evnt1, evnt2, evnt3, evnt4, evnt5
-        } = t('eventsec', { returnObjects: true });
-
+    const { evnt1, evnt2, evnt3, evnt4, evnt5 } = t('eventsec', { returnObjects: true });
 
     return (
         <div className="container">
@@ -83,7 +79,6 @@ const Events = () => {
                                             src={`data:image/jpeg;base64,${news.image_data}`}
                                             alt={news.title}
                                             className="card-img-top image rounded-top-5 opacity-75" style={{ width: '100%', height: 'auto' }}
-
                                         />
                                     </>
                                 ) : (
@@ -91,7 +86,7 @@ const Events = () => {
                                 )}
 
                                 <div className="centered">
-                                    <Link to="#" className="fa-solid fa-play playicon"></Link>
+                                    <span className="fa-solid fa-play playicon"></span>
                                 </div>
                             </div>
                             <div className="card-body card1 rounded-top-1 rounded-bottom-5">
@@ -107,22 +102,23 @@ const Events = () => {
             {/* Modal */}
             <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" onClick={handleCloseModal}>
                 <div className="modal-dialog modal-dialog-centered modal-xl">
-                    <div className="modal-evntent modalClr">
+                    <div className="modal-content modalClr">
                         <div className="modal-header">
                             <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label={evnt4}></button>
                         </div>
                         <div className="modal-body">
                             {currentVideoLink && (
-                                <iframe
-                                    width="1100"
-                                    height="500"
-                                    src={currentVideoLink}
-                                    title="Video Player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                ></iframe>
+                                <div className="iframe-container">
+                                    <iframe
+                                        className="iframenews"
+                                        src={currentVideoLink}
+                                        title="Video Player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerPolicy="strict-origin-when-cross-origin"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
                             )}
                         </div>
                     </div>
@@ -145,14 +141,13 @@ const Events = () => {
                                             src={`data:image/jpeg;base64,${news.image_data}`}
                                             alt={news.title}
                                             className="card-img-top image rounded-top-5 opacity-75" style={{ width: '100%', height: 'auto' }}
-
                                         />
                                     </>
                                 ) : (
                                     <p>{evnt3}</p>
                                 )}
                                 <div className="centered">
-                                    <Link to="#" className="fa-solid fa-play playicon"></Link>
+                                    <span className="fa-solid fa-play playicon"></span>
                                 </div>
                             </div>
                             <div className="card-body card1 rounded-top-1 rounded-bottom-5">
@@ -163,31 +158,6 @@ const Events = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-
-            {/* Modal */}
-            <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" onClick={handleCloseModal}>
-                <div className="modal-dialog modal-dialog-centered modal-xl">
-                    <div className="modal-evntent modalClr">
-                        <div className="modal-header">
-                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label={evnt4}></button>
-                        </div>
-                        <div className="modal-body">
-                            {currentVideoLink && (
-                                <iframe
-                                    width="1100"
-                                    height="500"
-                                    src={currentVideoLink}
-                                    title="Video Player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                ></iframe>
-                            )}
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );

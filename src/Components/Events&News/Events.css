@@ -16,7 +16,7 @@
 .card1 {
     background-color: #01066B;
     padding: 2px;
-    width: 400px;
+    width: 100%;
 }
 
 .textclr {
@@ -135,11 +135,28 @@
     .card1 {
         background-color: #01066B;
         padding: 2px;
-        width: 350px;
+        width: 100%;
     }
 }
 
 .subTopin {
     font-size: 30px;
     color: rgb(158, 165, 226);
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
