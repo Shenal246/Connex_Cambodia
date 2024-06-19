@@ -150,13 +150,13 @@ const Contact = () => {
                             {errors.acceptTerms && <span className="text-danger"> {cont20}</span>}
                         </div>
 
-                        <div className="mt-3">
+                        {/* <div className="mt-3">
                             <ReCAPTCHA
                                 ref={recaptchaRef}
                                 sitekey="YOUR_RECAPTCHA_SITE_KEY"
                                 onChange={handleRecaptchaChange}
                             />
-                        </div>
+                        </div> */}
                         <div className="row mt-4 btnContainer">
                             <div className="col-md-6 mb-2">
                                 <button type="submit" className="btn btn-success">{cont21}</button>

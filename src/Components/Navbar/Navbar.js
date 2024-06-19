@@ -141,9 +141,9 @@ function Navbar() {
                       <NavLink to="/UpcomingNews" activeClassName='active-link' exact>
                         <a>{tab5}</a>
                       </NavLink>
-                      <NavLink to="/Blog" activeClassName='active-link' exact>
+                      {/* <NavLink to="/Blog" activeClassName='active-link' exact>
                         <a>{tab6}</a>
-                      </NavLink>
+                      </NavLink> */}
 
                     </div>
                   </ul>

@@ -62,19 +62,19 @@ const Latest = () => {
         };
 
         axios.post(serverlink, value3).then((response) => {
-            setLatestThree(response.data);
+            setLatestThree(response.data[0]);
         }).catch((err) => {
             console.log(err);
         });
 
-        // Latest One
+        // Latest Four
         const value4 = {
             query: "SELECT title,link,type,status,image_data,cnt FROM news WHERE type=6 AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 
         axios.post(serverlink, value4).then((response) => {
-            setLatestFour(response.data);
+            setLatestFour(response.data[0]);
         }).catch((err) => {
             console.log(err);
         });
