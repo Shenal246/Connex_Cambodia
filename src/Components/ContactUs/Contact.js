@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import ReCAPTCHA from 'react-google-recaptcha';
 import './Contact.css';
 import cambo from '../../images/map/cambo.png';
 import { useTranslation } from 'react-i18next';
@@ -9,15 +8,8 @@ import { useTranslation } from 'react-i18next';
 const Contact = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const formRef = useRef();
-    const [isHuman, setIsHuman] = useState(false);
-    const recaptchaRef = useRef();
 
     const onSubmit = async (data) => {
-        if (!isHuman) {
-            alert('Please verify that you are a human!');
-            return;
-        }
-
         try {
             const response = await axios.post('http://localhost:5000/send-email', data);
             console.log(response.data);
@@ -25,10 +17,6 @@ const Contact = () => {
         } catch (error) {
             console.error('Error sending email:', error);
         }
-    };
-
-    const handleRecaptchaChange = (value) => {
-        setIsHuman(!!value);
     };
 
     const { t } = useTranslation();
@@ -150,13 +138,6 @@ const Contact = () => {
                             {errors.acceptTerms && <span className="text-danger"> {cont20}</span>}
                         </div>
 
-                        {/* <div className="mt-3">
-                            <ReCAPTCHA
-                                ref={recaptchaRef}
-                                sitekey="YOUR_RECAPTCHA_SITE_KEY"
-                                onChange={handleRecaptchaChange}
-                            />
-                        </div> */}
                         <div className="row mt-4 btnContainer">
                             <div className="col-md-6 mb-2">
                                 <button type="submit" className="btn btn-success">{cont21}</button>

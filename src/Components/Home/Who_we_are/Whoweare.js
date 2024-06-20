@@ -92,7 +92,7 @@ function WhoweareSection() {
                       </div>
                     </div>
                     <div className='row textRow'>
-                      <p className='iconText'>{counterOn && <CountUp start={0} end={2024} duration={2} delay={0.5} separator="" />}<br /> {ic1}</p>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={2023} duration={2} delay={0.5} separator="" />}<br /> {ic1}</p>
                     </div>
                   </div>
 
@@ -103,7 +103,7 @@ function WhoweareSection() {
                       </div>
                     </div>
                     <div className='row textRow'>
-                      <p className='iconText'>{counterOn && <CountUp start={0} end={10} duration={3} delay={0.5} />}+ <br />{ic2}</p>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={11} duration={3} delay={0.5} />}+ <br />{ic2}</p>
                     </div>
                   </div>
 
@@ -114,7 +114,7 @@ function WhoweareSection() {
                       </div>
                     </div>
                     <div className='row textRow'>
-                      <p className='iconText'>{counterOn && <CountUp start={0} end={12} duration={3} delay={0.5} />}+ <br />{ic3}</p>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={15} duration={3} delay={0.5} />}+ <br />{ic3}</p>
                     </div>
                   </div>
 
@@ -125,7 +125,7 @@ function WhoweareSection() {
                       </div>
                     </div>
                     <div className='row textRow'>
-                      <p className='iconText'>{counterOn && <CountUp start={0} end={40} duration={3} delay={0.5} />}+ <br />{ic4}</p>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={100} duration={3} delay={0.5} />}+ <br />{ic4}</p>
                     </div>
                   </div>
 
