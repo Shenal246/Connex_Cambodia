@@ -34,12 +34,12 @@ function Server() {
     }, []);
 
     const handleCardClick = (vend) => {
-        navigate(`/Solutions/ServerBackup/${vend.name}`, { state: { vend } });
+        navigate(`/KH/Solutions/ServerBackup/${vend.name}`, { state: { vend } });
     };
 
     const { t } = useTranslation();
     const { svr1, svr2
-        } = t('serversec', { returnObjects: true });
+    } = t('serversec', { returnObjects: true });
 
     return (
         <section>
@@ -56,7 +56,7 @@ function Server() {
                     {vendors && vendors.map((vend, index) => (
                         <div className="col" key={index}>
 
-                            <div class="card h-100" onClick={() => {  handleCardClick(vend); }}>
+                            <div class="card h-100" onClick={() => { handleCardClick(vend); }}>
                                 {vend.image_data ? (
                                     <>
                                         <img

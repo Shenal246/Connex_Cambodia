@@ -33,7 +33,7 @@ function Perimia() {
     }, []);
 
     const handleCardClick = (vend) => {
-        navigate(`/Solutions/Perimia/${vend.name}`, { state: { vend } });
+        navigate(`/KH/Solutions/Perimia/${vend.name}`, { state: { vend } });
     };
 
     const { t } = useTranslation();

@@ -122,23 +122,23 @@ function Navbar() {
         <header id="header" className="header d-flex align-items-center sticky-top">
           <div className="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" className="logo d-flex align-items-center me-auto">
-              <NavLink to="" activeClassName='active-link' exact><img src={Logo} alt="Logo" /></NavLink>
+              <NavLink to="/KH" activeClassName='active-link' exact><img src={Logo} alt="Logo" /></NavLink>
             </a>
             <nav id="navmenu" className="navmenu">
               <ul class="no-bullets">
-                <NavLink to="/About" activeClassName='active-link' exact><li><a className="">{tab1}</a></li></NavLink>
+                <NavLink to="/KH/About" activeClassName='active-link' exact><li><a className="">{tab1}</a></li></NavLink>
                 {/* <NavLink to="/Products" activeClassName='active-link' exact><li><a className="">Products</a></li></NavLink> */}
-                <NavLink to="/Solutions" activeClassName='active-link' exact><li><a className="">{tab2}</a></li></NavLink>
+                <NavLink to="/KH/Solutions" activeClassName='active-link' exact><li><a className="">{tab2}</a></li></NavLink>
 
 
                 <li className="dropdown countries"><a href="#" className='toggle-dropdown'>
                   <span className='toggle-dropdown'>{tab3}&nbsp; </span> <i className="bi bi-chevron-down toggle-dropdown arrow1 " ></i></a>
                   <ul className=''>
                     <div >
-                      <NavLink to="/Events&News" activeClassName='active-link' exact>
+                      <NavLink to="/KH/Events&News" activeClassName='active-link' exact>
                         <a>{tab4}</a>
                       </NavLink>
-                      <NavLink to="/UpcomingNews" activeClassName='active-link' exact>
+                      <NavLink to="/KH/UpcomingNews" activeClassName='active-link' exact>
                         <a>{tab5}</a>
                       </NavLink>
                       {/* <NavLink to="/Blog" activeClassName='active-link' exact>
@@ -149,7 +149,7 @@ function Navbar() {
                   </ul>
                 </li>
 
-                <NavLink to="/Portal" activeClassName='active-link' exact><li><a className="">{tab7}</a></li></NavLink>
+                <NavLink to="/KH/Portal" activeClassName='active-link' exact><li><a className="">{tab7}</a></li></NavLink>
 
                 <li className="dropdown countries"><a href="#" className='toggle-dropdown'>
                   <span className='toggle-dropdown'>{tab8}&nbsp;<img src={cam} alt=" Flag" className='flag flagNavbar' /> </span> <i className="bi bi-chevron-down toggle-dropdown arrow " ></i></a>
@@ -177,7 +177,7 @@ function Navbar() {
               <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <NavLink to="/ContactUs" activeClassName='active-link' className="btn-getstarted" >{tab9}</NavLink>
+            <NavLink to="/KH/ContactUs" activeClassName='active-link' className="btn-getstarted" >{tab9}</NavLink>
             <LanguageSelector/>
 
           </div>
@@ -186,32 +186,33 @@ function Navbar() {
 
         <Routes>
 
-          <Route path="" exact Component={Home}></Route>
-          <Route path="/About" exact Component={About}></Route>
-          <Route path="/Events&News" exact element={<Events />}></Route>
-          <Route path="/UpcomingNews" exact element={<UpcomingEvents />}></Route>
-          <Route path="/Blog" exact element={<Blog />}></Route>
-          <Route path="/ContactUs" exact Component={ContactUs}></Route>
-          <Route path="/Solutions" exact Component={Solutions}></Route>
-          <Route path="/Portal" exact Component={Portal}></Route>
+          {/* <Route path="/" exact Component={Home}></Route> */}
+          <Route path="/KH" exact Component={Home}></Route>
+          <Route path="/KH/About" exact Component={About}></Route>
+          <Route path="/KH/Events&News" exact element={<Events />}></Route>
+          <Route path="/KH/UpcomingNews" exact element={<UpcomingEvents />}></Route>
+          <Route path="/KH/Blog" exact element={<Blog />}></Route>
+          <Route path="/KH/ContactUs" exact Component={ContactUs}></Route>
+          <Route path="/KH/Solutions" exact Component={Solutions}></Route>
+          <Route path="/KH/Portal" exact Component={Portal}></Route>
 
-          <Route path="/Solutions/CyberSecurity" element={<CyberSecurity />} />
-          <Route path="/Solutions/Authentication" element={<Authentication />} />
-          <Route path="/Solutions/SecurityManagement" element={<SecurityManagement />} />
-          <Route path="/Solutions/Perimia" element={<Perimia />} />
-          <Route path="/Solutions/EndpointSecurity" element={<EndpointSecurity />} />
-          <Route path="/Solutions/Networking" element={<Networking />} />
-          <Route path="/Solutions/Infrastructure" element={<Infrastructure />} />
-          <Route path="/Solutions/Server" element={<Server />} />
+          <Route path="/KH/Solutions/CyberSecurity" element={<CyberSecurity />} />
+          <Route path="/KH/Solutions/Authentication" element={<Authentication />} />
+          <Route path="/KH/Solutions/SecurityManagement" element={<SecurityManagement />} />
+          <Route path="/KH/Solutions/Perimia" element={<Perimia />} />
+          <Route path="/KH/Solutions/EndpointSecurity" element={<EndpointSecurity />} />
+          <Route path="/KH/Solutions/Networking" element={<Networking />} />
+          <Route path="/KH/Solutions/Infrastructure" element={<Infrastructure />} />
+          <Route path="/KH/Solutions/Server" element={<Server />} />
 
-          <Route path="/Solutions/Authentication/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/CyberSecurity/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/Endpoin/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/InfrastructureMonitoring/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/Networking/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/Perimia/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/Security/:vendorName" element={<SingleVendor />} />
-          <Route path="/Solutions/ServerBackup/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/Authentication/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/CyberSecurity/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/Endpoin/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/InfrastructureMonitoring/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/Networking/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/Perimia/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/Security/:vendorName" element={<SingleVendor />} />
+          <Route path="/KH/Solutions/ServerBackup/:vendorName" element={<SingleVendor />} />
 
 
 

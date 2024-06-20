@@ -34,7 +34,7 @@ function InfrastructureMonitoring() {
     }, []);
 
     const handleCardClick = (vend) => {
-        navigate(`/Solutions/InfrastructureMonitoring/${vend.name}`, { state: { vend } });
+        navigate(`/KH/Solutions/InfrastructureMonitoring/${vend.name}`, { state: { vend } });
     };
 
     const { t } = useTranslation();
