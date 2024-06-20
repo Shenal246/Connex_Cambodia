@@ -4,20 +4,55 @@ import axios from 'axios';
 import './Contact.css';
 import cambo from '../../images/map/cambo.png';
 import { useTranslation } from 'react-i18next';
+    import Swal from 'sweetalert2'
 
 const Contact = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const formRef = useRef();
 
     const onSubmit = async (data) => {
+        // if (!isHuman) {
+        //     alert('Please verify that you are a human!');
+        //     return;
+        // }
+
+        const values = [data.firstName, data.lastName, data.Company, data.contactNumber, data.email, data.comments];
+
+        const value33 = {
+            query: "INSERT INTO contactus(firstname, lastname, company, tpno,email,comment,countryid,statusid) VALUES (?,?,?,?,?,?,?,?)",
+            value1: values[0],
+            value2: values[1],
+            value3: values[2],
+            value4: values[3],
+            value5: values[4],
+            value6: values[5],
+            value7: 3,
+            value8: 1,
+            key: "FKoaDwCi7C"
+        };
+
+        console.log(value33);
+
         try {
-            const response = await axios.post('http://localhost:5000/send-email', data);
-            console.log(response.data);
-            reset();
+            const response = await axios.post("http://192.168.13.75:3001/insert", value33);
+            if (response.status === 200) {
+                Swal.fire({
+                    // position: "top-end",
+                    icon: "success",
+                    title: "Successfully Submitted",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                reset();
+            } else {
+                alert('Failed to submit the form.');
+            }
         } catch (error) {
-            console.error('Error sending email:', error);
+            console.error('Error submitting the form', error);
+            alert('An error occurred while submitting the form.');
         }
     };
+
 
     const { t } = useTranslation();
     const { cont1, cont2, cont3, cont4, cont5, cont6, cont7,

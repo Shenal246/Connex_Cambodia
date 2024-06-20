@@ -1,5 +1,5 @@
 import './Hero.css';
-import Logo from '../../../images/hero.png';
+import Logo from '../../../images/heronew.png';
 import React, { useRef, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
@@ -58,7 +58,7 @@ function HeroSection() {
             </div>
           </div>
           <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
-            <img src={Logo} className="img-fluid animated heroimg" style={{ width: '100%' }} alt="Hero" />
+            <img src={Logo} className="img-fluid animated heroimg" style={{ width: '85%' }} alt="Hero" />
           </div>
           <div className="col-lg-6 order-1 order-lg-2 space"></div>
         </div>
