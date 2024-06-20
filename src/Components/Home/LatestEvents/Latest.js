@@ -103,7 +103,7 @@ const Latest = () => {
                         <div className="mb-2">
 
                             {/* Card1 */}
-                            <div className="cardContainer1 card" data-bs-toggle="modal" data-bs-target="#videoModal" onClick={() => handleCardClick(latestOne.link)}>
+                            <div className="cardContainer1 card" data-bs-toggle="modal" data-bs-target="#videoModal3" onClick={() => handleCardClick(latestOne.link)}>
                                 {latestOne && latestOne.image_data ? (
                                     <>
                                         <img
@@ -132,7 +132,7 @@ const Latest = () => {
                     <div className="col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                         <div className='row'>
                             <div className="mb-2">
-                                <div className="cardContainer2 card" data-bs-toggle="modal" data-bs-target="#videoModal" onClick={() => handleCardClick(latestTwo.link)}>
+                                <div className="cardContainer2 card" data-bs-toggle="modal" data-bs-target="#videoModal3" onClick={() => handleCardClick(latestTwo.link)}>
                                     {latestTwo && latestTwo.image_data ? (
                                         <>
                                             <img
@@ -161,7 +161,7 @@ const Latest = () => {
                                 <div className="col-md-6">
                                     {/* First image of the Second column second row */}
                                     <div className="mb-2">
-                                        <div className="cardContainer2 card" data-bs-toggle="modal" data-bs-target="#videoModal" onClick={() => handleCardClick(latestThree.link)}>
+                                        <div className="cardContainer2 card" data-bs-toggle="modal" data-bs-target="#videoModal3" onClick={() => handleCardClick(latestThree.link)}>
                                             {latestThree && latestThree.image_data ? (
                                                 <>
                                                     <img
@@ -187,7 +187,7 @@ const Latest = () => {
                                 <div className="col-md-6">
                                     {/* Second image of the Second column second row */}
                                     <div className="mb-2">
-                                        <div className="cardContainer2 card" data-bs-toggle="modal" data-bs-target="#videoModal" onClick={() => handleCardClick(latestFour.link)}>
+                                        <div className="cardContainer2 card" data-bs-toggle="modal" data-bs-target="#videoModal3" onClick={() => handleCardClick(latestFour.link)}>
                                             {latestFour && latestFour.image_data ? (
                                                 <>
                                                     <img
@@ -225,7 +225,7 @@ const Latest = () => {
                     </div>
 
                     {/* Modal */}
-                    <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" onClick={handleCloseModal}>
+                    <div className="modal fade" id="videoModal3" tabIndex="-1" aria-labelledby="videoModal3Label" aria-hidden="true" onClick={handleCloseModal}>
                         <div className="modal-dialog modal-dialog-centered modal-xl">
                             <div className="modal-content modalClr">
                                 <div className="modal-header">
