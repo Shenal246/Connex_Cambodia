@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
+import Microsoft from './Components/Solutions/solutionVendors/Microsoft/Microsoft';
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug: true,
@@ -77,6 +78,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 },
                 // Sollutions section
                 solutionssec: {
+                    solu: "Solution",
                     periTopic: "Perimeter and  Internal Security",
                     cyberTopic: "Cyber Security Governance & Compliance",
                     authTopic: "Authentication & Identity Management",
@@ -85,6 +87,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     netTopic: "Networking",
                     dataTopic: "Data Center Infrastructure and  Monitoring",
                     serverTopic: "Server Storage & Backup Solutions",
+                    Microsoft: "Microsoft"
                 },
                 // Footer section
                 footersec: {
@@ -272,6 +275,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     lattopic: "ព័ត៌មានថ្មីបំផុត",
                 },
                 solutionssec: {
+                    solu: "ដំណោះស្រាយ",
                     periTopic: "សន្តិសុខបណ្តោយនិងផ្ទៃក្នុង",
                     cyberTopic: "ការគ្រប់គ្រងនិងការអនុវត្តសន្តិសុខបច្ចេកវិទ្យា",
                     authTopic: "ការផ្ទៀងផ្ទាត់និងការគ្រប់គ្រងអត្តសញ្ញាណ",
@@ -280,6 +284,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     netTopic: "បណ្ដាញ",
                     dataTopic: "ហេដ្ឋារចនាសម្ព័ន្ធនិងការត្រួតពិនិត្យផ្នែកទិន្នន័យ",
                     serverTopic: "ដំណោះស្រាយផ្ទុកនិងការបម្រុងទុកម៉ាស៊ីនបម្រើ",
+                    Microsoft: "ម៉ៃក្រូសូហ្វ្ទ"
                 },
                 footersec: {
                     footHeadTopic: "ការិយាល័យគណៈ",

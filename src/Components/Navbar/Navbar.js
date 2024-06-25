@@ -39,6 +39,8 @@ import products from '../Products/products';
 import LanguageSelector from '../language-selector';
 import Perimia from '../Solutions/solutionVendors/Perimia/Perimia';
 
+import Microsoft from '../Solutions/solutionVendors/Microsoft/Microsoft';
+
 
 function Navbar() {
 
@@ -187,6 +189,7 @@ function Navbar() {
         <Routes>
 
           {/* <Route path="/" exact Component={Home}></Route> */}
+          <Route path="/" exact Component={Home}></Route>
           <Route path="/KH" exact Component={Home}></Route>
           <Route path="/KH/About" exact Component={About}></Route>
           <Route path="/KH/Events&News" exact element={<Events />}></Route>
@@ -204,7 +207,7 @@ function Navbar() {
           <Route path="/KH/Solutions/Networking" element={<Networking />} />
           <Route path="/KH/Solutions/Infrastructure" element={<Infrastructure />} />
           <Route path="/KH/Solutions/Server" element={<Server />} />
-
+          <Route path="/KH/Solutions/Microsoft" element={<Microsoft />} />
           <Route path="/KH/Solutions/Authentication/:vendorName" element={<SingleVendor />} />
           <Route path="/KH/Solutions/CyberSecurity/:vendorName" element={<SingleVendor />} />
           <Route path="/KH/Solutions/Endpoin/:vendorName" element={<SingleVendor />} />

@@ -19,7 +19,7 @@ function Server() {
 
     useEffect(() => {
         const values = {
-            query: "SELECT name,des,wlink,status,image_data,cnt,Server_Storage_Backup_Solutions FROM Vendor WHERE Server_Storage_Backup_Solutions='true' AND status=1 AND cnt=2;",
+            query: "SELECT name,des,wlink,status,image_data,cnt,Server_Storage_Backup_Solutions FROM Vendor WHERE Server_Storage_Backup_Solutions='true' AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 

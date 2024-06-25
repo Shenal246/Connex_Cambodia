@@ -19,7 +19,7 @@ function Authentication() {
 
     useEffect(() => {
         const values = {
-            query: "SELECT name,des,wlink,status,image_data,cnt,Authentication_Identity_Management FROM Vendor WHERE Authentication_Identity_Management='true' AND status=1 AND cnt=2;",
+            query: "SELECT name,des,wlink,status,image_data,cnt,Authentication_Identity_Management FROM Vendor WHERE Authentication_Identity_Management='true' AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 

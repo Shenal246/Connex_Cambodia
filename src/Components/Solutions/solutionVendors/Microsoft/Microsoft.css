@@ -1,0 +1,54 @@
+.miclogo{
+    width: 250px !important;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.firstrow{
+    margin-top: 20px !important;
+    margin-bottom: 8px !important;
+}
+
+.AuthText{
+    color: #00A3FF;
+    padding-top: 60px;
+    font-size: 170%;
+}
+
+.descontainer{
+    background-color: rgba(190, 186, 186, 0.322);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.micsectopic{
+    color: black;
+    background-color: white;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.micsectopic3{
+    color: black;
+    background-color: white;
+    width: 235px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.unlisted{
+    text-decoration: none;
+    color: white;
+}
+
+.websiteButtonmic{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    margin: 1px;
+}

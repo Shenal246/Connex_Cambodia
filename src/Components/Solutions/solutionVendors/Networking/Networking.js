@@ -19,7 +19,7 @@ function Networking() {
 
     useEffect(() => {
         const values = {
-            query: "SELECT name,des,wlink,status,image_data,cnt,Networking FROM Vendor WHERE Networking='true' AND status=1 AND cnt=2;",
+            query: "SELECT name,des,wlink,status,image_data,cnt,Networking FROM Vendor WHERE Networking='true' AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 

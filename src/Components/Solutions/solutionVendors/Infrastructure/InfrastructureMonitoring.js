@@ -19,7 +19,7 @@ function InfrastructureMonitoring() {
 
     useEffect(() => {
         const values = {
-            query: "SELECT name,des,wlink,status,image_data,cnt,Data_Center_Infrastructure_and_Infrastructure_Monitoring FROM Vendor WHERE Data_Center_Infrastructure_and_Infrastructure_Monitoring='true' AND status=1 AND cnt=2;",
+            query: "SELECT name,des,wlink,status,image_data,cnt,Data_Center_Infrastructure_and_Infrastructure_Monitoring FROM Vendor WHERE Data_Center_Infrastructure_and_Infrastructure_Monitoring='true' AND status=1 AND cnt=3;",
             key: "Cr6re8VRBm"
         };
 
