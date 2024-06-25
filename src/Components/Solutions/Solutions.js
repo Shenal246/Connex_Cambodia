@@ -10,6 +10,9 @@ import servers from '../../images/pillers/severBackup.jpg';
 import mrcst from '../../images/pillers/Microsoft.jpg'
 import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import CamNavbar from '../Navbar/Navbar';
+import CamChat from '../ChatBot/Chat';
+import CamFooter from '../Footer/Footer';
 
 function Solutions() {
 
@@ -20,6 +23,9 @@ function Solutions() {
         } = t('solutionssec', { returnObjects: true });
 
   return (
+    <>
+    <CamNavbar/>
+    <CamChat/>
     <section id='hero' className='hero1 heroSolution'>
       <div className="container text-center">
         <div className='row'>
@@ -130,6 +136,10 @@ function Solutions() {
 
       </div>
     </section>
+    <CamFooter/>
+
+    
+    </>
   );
 }
 

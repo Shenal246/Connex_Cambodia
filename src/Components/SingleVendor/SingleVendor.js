@@ -1,6 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './SVendor.css';
+import CamNavbar from '../Navbar/Navbar';
+import CamChat from '../ChatBot/Chat';
+import CamFooter from '../Footer/Footer';
 
 const SingleVendor = () => {
     const location = useLocation();
@@ -8,6 +11,9 @@ const SingleVendor = () => {
     
 
     return (
+        <>
+        <CamNavbar/>
+<CamChat/>
         <section>
             <div className="container sectionVendor">
                 <div className='row'>
@@ -39,6 +45,9 @@ const SingleVendor = () => {
                 </div>
             </div>
         </section>
+
+        <CamFooter/>
+        </>
     );
 };
 

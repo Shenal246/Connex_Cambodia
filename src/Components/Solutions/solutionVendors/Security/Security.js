@@ -9,6 +9,9 @@ import { Row } from 'react-bootstrap';
 import connections from '../../../../config';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import CamNavbar from '../Navbar/Navbar';
+import CamChat from '../ChatBot/Chat';
+import CamFooter from '../Footer/Footer';
 
 
 function Security() {
@@ -43,6 +46,9 @@ function Security() {
         } = t('securitysec', { returnObjects: true });
 
     return (
+        <>
+        <CamNavbar/>
+        <CamChat/>
         <section>
             <div className="container">
                 <div className='row '>
@@ -106,6 +112,9 @@ function Security() {
                 </Modal>
             </div>
         </section>
+        <CamFooter/>
+        
+        </>
     );
 }
 

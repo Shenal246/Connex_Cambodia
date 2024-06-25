@@ -4,7 +4,10 @@ import axios from 'axios';
 import './Contact.css';
 import cambo from '../../images/map/cambo.png';
 import { useTranslation } from 'react-i18next';
-    import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import CamNavbar from '../Navbar/Navbar';
+import CamChat from '../ChatBot/Chat';
+import CamFooter from '../Footer/Footer';
 
 const Contact = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -62,6 +65,9 @@ const Contact = () => {
     } = t('contsec', { returnObjects: true });
 
     return (
+        <>
+        <CamNavbar/>
+        <CamChat/>
         <div className="container">
             <div className='row'>
                 <div className="row gy-3 text mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
@@ -209,6 +215,8 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+<CamFooter/>
+        </>
     );
 }
 

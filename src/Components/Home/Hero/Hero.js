@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
+
 function HeroSection() {
   const iframeRef = useRef(null); // Create a ref for the iframe element
 

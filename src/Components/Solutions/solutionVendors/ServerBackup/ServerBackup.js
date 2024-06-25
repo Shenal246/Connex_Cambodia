@@ -9,6 +9,9 @@ import { Row } from 'react-bootstrap';
 import connections from '../../../../config';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import CamNavbar from '../Navbar/Navbar';
+import CamChat from '../ChatBot/Chat';
+import CamFooter from '../Footer/Footer';
 
 function Server() {
     const [vendors, setVendors] = useState([]);
@@ -42,7 +45,11 @@ function Server() {
     } = t('serversec', { returnObjects: true });
 
     return (
-        <section>
+       <>
+       <CamNavbar/>
+       <CamChat/>
+       
+       <section>
             <div className="container">
                 <div className='row '>
                     <div className="row text headingrow">
@@ -106,6 +113,8 @@ function Server() {
                 </Modal>
             </div>
         </section>
+       <CamFooter/>
+       </>
     );
 }
 
