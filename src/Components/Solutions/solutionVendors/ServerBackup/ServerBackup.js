@@ -70,7 +70,6 @@ function Server() {
                                             src={`data:image/jpeg;base64,${vend.image_data}`}
                                             alt={vend.title}
                                             className="card-img-top"
-
                                         />
                                     </>
                                 ) : (
