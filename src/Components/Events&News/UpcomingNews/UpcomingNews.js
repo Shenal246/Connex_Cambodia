@@ -4,9 +4,9 @@ import './UpcomingNews.css';
 import axios from "axios";
 import connections from '../../../config';
 import { useTranslation } from 'react-i18next';
-import CamNavbar from '../Navbar/Navbar';
-import CamChat from '../ChatBot/Chat';
-import CamFooter from '../Footer/Footer';
+import CamNavbar from '../../Navbar/Navbar';
+import CamChat from '../../ChatBot/Chat';
+import CamFooter from '../../Footer/Footer';
 
 const UpcomingNews = () => {
     const videoRef = useRef(null); // Create a ref for the video element

@@ -17,9 +17,9 @@ function App() {
     <>
       {/* <Topbar /> */}
       <Navbar />
-      <Chat/>
+      {/* <Chat/>
 
-      <Footer />
+      <Footer /> */}
     </>
 
   );

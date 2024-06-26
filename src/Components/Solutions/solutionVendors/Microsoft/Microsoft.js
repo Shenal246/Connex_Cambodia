@@ -1,9 +1,9 @@
 import React from 'react'
 import micimg from '../../../../images/vendorLogos/2.png'
 import './Microsoft.css';
-import CamNavbar from '../Navbar/Navbar';
-import CamChat from '../ChatBot/Chat';
-import CamFooter from '../Footer/Footer';
+import CamNavbar from '../../../Navbar/Navbar';
+import CamChat from '../../../ChatBot/Chat';
+import CamFooter from '../../../Footer/Footer';
 
 function Microsoft() {
     return (

@@ -8,9 +8,9 @@ import { Row } from 'react-bootstrap';
 import connections from '../../../../config';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import CamNavbar from '../Navbar/Navbar';
-import CamChat from '../ChatBot/Chat';
-import CamFooter from '../Footer/Footer';
+import CamNavbar from '../../../Navbar/Navbar';
+import CamChat from '../../../ChatBot/Chat';
+import CamFooter from '../../../Footer/Footer';
 
 
 function InfrastructureMonitoring() {
